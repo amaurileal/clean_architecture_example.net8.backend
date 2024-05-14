@@ -59,10 +59,10 @@ dotnet run --project .\src\MotorcycleRentMessageBrokerConsumer1\
 
 To facilitate execution, testing, and deployment, automatic database structure creation using Migrations has been implemented. The Seeds feature was also used to insert the following basic records:
 
-- Planos de Locação
-- Usuários: Admin e Biker(Entregador)
-- Roles: Admin e Biker
-- Dois registros de motos de exemplo
+- Rental Plans
+- Users: Admin and Biker (Courier)
+- Roles: Admin and Biker
+- Two example motorcycle records
 
 
 
