@@ -55,7 +55,7 @@ dotnet run --project .\src\MotorcycleRental.API\MotorcycleRental.API.csproj --ur
 dotnet run --project .\src\MotorcycleRentMessageBrokerConsumer1\
 ```
 
-## Migrations e Seeds
+## Migrations and Seeds
 
 To facilitate execution, testing, and deployment, automatic database structure creation using Migrations has been implemented. The Seeds feature was also used to insert the following basic records:
 
