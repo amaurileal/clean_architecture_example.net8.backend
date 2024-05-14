@@ -1,0 +1,32 @@
+@MotorcycleRental.API_HostAddress = https://localhost:7099
+
+GET {{MotorcycleRental.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+
+POST {{MotorcycleRental.API_HostAddress}}/api/identities/bikerRegister
+Content-Type: application/json
+
+{
+  "email": "teste@teste.com",
+  "password": "Password!1",
+  "createBikerDto": {
+    "cnpj": "77.841.880/0001-53",
+    "dateOfBirth": "2000-05-10",
+    "cnh": "99999999999",
+    "cnhType": "A"
+  }
+}
+
+###
+
+POST {{MotorcycleRental.API_HostAddress}}/api/identities/login
+Content-Type: application/json
+
+{
+  "email":"amauri_leal@yahoo.com.br",
+  "password":"string"
+}
+
+###
