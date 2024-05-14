@@ -30,7 +30,7 @@ API built in .Net 8, following a Clean Architecture structure divided into 4 lay
 #### With Docker installed, run the following command in the project root directory:
 
 ```bash
-docker-compose up
+docker-compose up -d
 ```
 
 #### This command will initialize 3 services:
