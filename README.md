@@ -4,6 +4,8 @@ Backend system for managing motorcycle rentals.
 
 API built in .Net 8, following a Clean Architecture structure divided into 4 layers: Domain, Application, Infrastructure, and Presentation(API).
 
+*This repository originates from the https://github.com/SilvaLealTests/MotorcycleRental*
+
 ## Main resources used:
 
 - ORM with EntityFramework
