@@ -49,7 +49,7 @@ docker-compose up -d
 dotnet run --project .\src\MotorcycleRental.API\MotorcycleRental.API.csproj --urls="https://localhost:5001;http://localhost:5000"
 ```
 
-*A API estará dispinível através da URL https://localhost:5001/swagger e poderá ser acessada pelo browser de sua preferencia.
+*The API will be available at the URL https://localhost:5001/swagger and can be accessed through the browser of your choice.
 
 ##### Worker(RabbitMQ Consumer):
 
@@ -65,6 +65,27 @@ To facilitate execution, testing, and deployment, automatic database structure c
 - Users: Admin and Biker (Courier)
 - Roles: Admin and Biker
 - Two example motorcycle records
+
+## Testing Execution
+For testing, you can use the endpoint api/identities/login with one of these payloads:
+
+- Admin User(Admin Role)
+```bash
+{
+  "email": "admin@test.com",
+  "password": "Password!1"
+}
+```
+
+- Biker User(Biker Role)
+```bash
+{
+  "email": "biker@test.com",
+  "password": "Password!1"
+}
+```
+
+
 
 
 
