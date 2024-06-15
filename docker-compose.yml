@@ -1,0 +1,28 @@
+version: '3.4'
+
+services:
+  postgres:
+    image: postgres
+  rabbitmq:
+    image: rabbitmq:3-management-alpine
+  motorcyclerental.api:
+    image: ${DOCKER_REGISTRY-}motorcyclerentalapi
+    build:
+      context: .
+      dockerfile: src/MotorcycleRental.API/Dockerfile
+
+  motorcyclerentmessagebrokerconsumer1:
+    image: ${DOCKER_REGISTRY-}motorcyclerentmessagebrokerconsumer1
+    build:
+      context: .
+      dockerfile: src/MotorcycleRentMessageBrokerConsumer1/Dockerfile
+
+volumes:
+   postgres:
+
+networks:
+  postgres:
+    driver: bridge
+  rabbitmq_motor_rent_net:
+    driver: bridge
+
